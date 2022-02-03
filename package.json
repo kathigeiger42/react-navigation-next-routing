@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Make Next.js and react-navigation play nicely together with an React Native Web app.",
   "sideEffects": true,
-  "main": "src/index.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "repository": "https://github.com/horizon-alpha/react-navigation-next-routing",
   "author": "Alexander Kuttig",
   "license": "MIT",
@@ -12,6 +13,14 @@
   ],
   "jest": {
     "preset": "jest-expo-enzyme"
+  },
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.162",
@@ -33,5 +42,6 @@
     "react-native-screens": "^3.10.2",
     "react-native-safe-area-context": "^3.3.2",
     "lodash.get": "^4.4.2"
-  }
+  },
+  "homepage": "https://github.com/horizon-alpha/react-navigation-next-routing"
 }
