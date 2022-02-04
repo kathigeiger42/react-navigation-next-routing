@@ -104,8 +104,8 @@ export function useNavigation<
 }
 
 export function useLinkTo() {
+  const navigation = useNavigation();
   const linkTo = (url, params) => {
-    const navigation = useNavigation();
     navigation.navigate({routeName: url, params: params});
   }
   return linkTo;
