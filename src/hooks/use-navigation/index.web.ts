@@ -110,3 +110,18 @@ export function useLinkTo() {
   }
   return linkTo;
 }
+
+export function useRoute() {
+  const router = useRouter()
+  const route = () => {
+    const params = () => {
+      if (!router) {
+        return undefined
+      }
+      return router.query;
+    }
+
+    return params;
+  }
+  return route;
+}
