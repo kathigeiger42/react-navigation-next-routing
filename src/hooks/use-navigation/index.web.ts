@@ -113,15 +113,8 @@ export function useLinkTo() {
 
 export function useRoute() {
   const router = useRouter()
-  const route = () => {
-    const params = () => {
-      if (!router) {
-        return undefined
-      }
-      return router.query;
+  const route = {
+    params:  router ? router.query : undefined
     }
-
-    return params;
-  }
   return route;
 }
