@@ -1,1 +1,1 @@
-export { useNavigation, useLinkTo } from '@react-navigation/native';
+export { useNavigation, useLinkTo, useRoute } from '@react-navigation/native';
