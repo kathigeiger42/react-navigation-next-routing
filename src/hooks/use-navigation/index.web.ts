@@ -100,6 +100,7 @@ export function useNavigation<
     setParams,
     canGoBack,
     pathname: router?.pathname,
+    locale: router.locale,
   }
 }
 
